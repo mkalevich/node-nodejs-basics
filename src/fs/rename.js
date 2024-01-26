@@ -17,7 +17,6 @@ const rename = () => {
         if (noSuchFile) {
           fs.rename(fileName, newFileName, (err) => {
             if (err) throw err;
-            console.log("Successfully renamed - AKA moved!");
           });
         } else {
           throw new Error("FS operation failed");
